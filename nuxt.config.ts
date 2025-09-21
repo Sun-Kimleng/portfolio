@@ -23,16 +23,5 @@ export default defineNuxtConfig({
   , vite              : {
       plugins: [tailwindcss()],
     }
-  , app: {
-        head: {
-            title   : 'Sun Kimleng',
-            link    : [
-              { rel: 'icon', type: 'image/png', href: '/images/logo.png' } // favicon in /public
-            ],
-            meta    : [
-              { name: 'description', content: 'Leng’s awesome Nuxt portfolio' }
-            ]
-      }
-  }
   , ssr: true,
 })
