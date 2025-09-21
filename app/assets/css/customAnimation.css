@@ -48,3 +48,11 @@
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 100%; }
 }
+
+body.loading {
+  visibility: hidden;
+}
+body.ready {
+  visibility: visible;
+  transition: visibility 0s 0.2s;
+}

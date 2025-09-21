@@ -1,4 +1,4 @@
-<template>
+<template v-if="isLoaded">
     <main ref="scrollArea" id="scroll-area" class="font-fira overflow-x-hidden bg-gray-50 text-gray-800">
         <section class="px-8 2xl:px-20 h-max bg-cover" style="background-image: url('/images/headerBackground.jpg')"">
             <header class="text-xl py-8 text-white w-full flex justify-between">
@@ -303,6 +303,7 @@
     import { useTemplateRef, ref, onBeforeUnmount } from 'vue'
 
     const scrollArea    = useTemplateRef("scrollArea")
+    
     const usingList     = ref([
         {
             name        : 'HTML'
@@ -361,6 +362,8 @@
             , logo      : '/images/language-icons/nuxt.png' 
         }
     ])
+
+    
 
     const learningList     = ref([
         {
