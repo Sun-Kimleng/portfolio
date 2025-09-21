@@ -1,0 +1,50 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.typing {
+  width: 15ch; /* number of characters */
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black;
+  animation: typing 3s steps(15) infinite, blink .7s step-end infinite;
+}
+
+@keyframes typing {
+  0%   { width: 0 }
+  50%  { width: 15ch }
+  100% { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.bg-painted {
+  height: 100vh;
+  width: 100%;
+  background: repeating-conic-gradient(
+      from 45deg,
+      #F5B027 0deg 30deg,
+      #000000 30deg 60deg
+    );
+  background-size: 200% 200%;
+  animation: paintShift 25s ease-in-out infinite alternate;
+}
+
+@keyframes paintShift {
+  0%   { background-position: 0% 0%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 100%; }
+}
