@@ -430,6 +430,15 @@
 
         
     })
+
+    useHead({
+        meta: [
+            { property: 'og:title', content: 'I am Sun Kimleng working as a web developer' },
+            { property: 'og:description', content: 'I am a web developer with well‑developed coding skills and a strong ability to work under pressure while handling complex tasks. I’m highly adaptable, able to stay focused for long periods, and always ready to support my teammates. With solid research and critical‑thinking skills, I enjoy solving problems and finding efficient solutions. My experience includes building responsive static and dynamic websites, designing clean user interfaces, and developing REST API endpoints. I have hands‑on knowledge of both frontend and backend development, with practical experience using Vue.js, Nuxt, Tailwind CSS, Flask, Express.js, and Python. I’m passionate about continuous learning, exploring new technologies, and applying them to create scalable, maintainable systems. Currently, I am seeking a web development role where I can contribute my skills, grow professionally, and build impactful digital experiences.' },
+            { property: 'og:image', content: 'https://lengeii.site/images/logo.png' },
+            { property: 'og:url', content: 'https://lengeii.site' }
+        ]
+    })
     
 </script>
 
