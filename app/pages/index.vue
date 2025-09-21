@@ -48,7 +48,7 @@
         </section>
 
         <!-- INTRODUCTION SECTION -->
-        <section class="p-8 lg:p-20 w-full text-white h-max bg-[#222831] text-xl">
+        <section id="about-me" class="p-8 lg:p-20 w-full text-white h-max bg-[#222831] text-xl">
             <div>
                 <h1 data-aos="fade-right" class="text-4xl">ABOUT ME</h1>
                 <p data-aos="fade-left" class="text-base mt-4">
@@ -60,7 +60,7 @@
         <!-- END OF INTRODUCTION SECTION -->
 
         <!-- SKILL SECTIONS -->
-        <section class="px-8 md:px-32 2xl:px-120 py-8 2xl:py-20 bg-[#dabf4c]">
+        <section id="skills" class="px-8 md:px-32 2xl:px-120 py-8 2xl:py-20 bg-[#dabf4c]">
             <h1 data-aos="flip-up" class="text-xl xl:text-4xl text-black font-bold w-max mx-auto border-4 p-5">SKILLS</h1>
             <div class="mt-12">
                 <h1 data-aos="zoom-out" class="text-xl md:text-2xl text-black font-bold w-max mx-auto">EXPERIENCE & PRESENT USE</h1>
@@ -84,7 +84,7 @@
         <!-- END OF SKILL SECTIONS -->
 
         <!-- PROJECT SECTIONS -->
-        <section class="px-8 py-8 2xl:py-20 bg-[#dabf4c]">
+        <section id="projects" class="px-8 py-8 2xl:py-20 bg-[#dabf4c]">
             <h1 data-aos="flip-down" class="text-xl xl:text-4xl text-black font-bold w-max mx-auto border-4 p-5 mb-4">COLLABORATIVE PROJECTS</h1>
 
             <!-- GONOKA WEBSITE -->
@@ -170,7 +170,7 @@
             </section>
             <!-- END OF GONOKA APP -->
 
-            <!-- ENOTE -->
+            <!-- GONOKA PROFESSIONAL -->
             <section data-aos="zoom-out" class="grid grid-cols-1 gap-12 lg:p-10 mt-8">
                 <!-- Project Card -->
                 <div class="bg-[#222831] text-black rounded-2xl shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-2 gap-6 transform transition duration-500 hover:-translate-y-2 hover:shadow-2xl">
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </section>
-            <!-- END OF ENOTE -->
+            <!-- END OF GONOKA PROFESSIONAL -->
 
             <div class="text-black mt-8">“In addition to the projects showcased here, I have contributed to many more professional applications and systems. However, due to copyright restrictions and client permissions, I am unable to share screenshots or detailed visuals of those works. What I can highlight is the range of technologies I used, the problems I solved, and the impact I delivered.”</div>
             
@@ -221,7 +221,7 @@
         <!-- END OF PROJECT SECTIONS -->
 
         <!-- SKILL SECTIONS -->
-        <section class="px-8 md:px-32 2xl:px-120 py-8 2xl:py-20 bg-[#dabf4c]">
+        <section id="contact-me" class="px-8 md:px-32 2xl:px-120 py-8 2xl:py-20 bg-[#dabf4c]">
             <h1 data-aos="flip-up" class="text-xl xl:text-4xl text-black font-bold w-max mx-auto border-4 p-5">Contact Me</h1>
             <div class="mt-12">
                 <article class="flex flex-col items-center space-y-4 py-10">
@@ -432,3 +432,9 @@
     })
     
 </script>
+
+<style lang="css">
+    html {
+        scroll-behavior: smooth;
+    }
+</style>

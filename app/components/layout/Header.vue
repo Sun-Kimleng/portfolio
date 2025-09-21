@@ -8,18 +8,18 @@
 
         <div class="hidden 2xl:block w-max">
             <div class="flex gap-8 text-black">
-                <a data-aos="flip-down" href="#" class="hover:underline">About Me</a>
-                <a data-aos="flip-down" href="#" class="hover:underline">Skills</a>
-                <a data-aos="flip-down" href="#" class="hover:underline">Projects</a>
-                <a data-aos="flip-down" class="bg-white text-black rounded-2xl px-4 py-2 -mt-2 cursor-pointer">Contact me</a>
+                <a data-aos="flip-down" href="#about-me" class="hover:underline">About Me</a>
+                <a data-aos="flip-down" href="#skills" class="hover:underline">Skills</a>
+                <a data-aos="flip-down" href="#projects" class="hover:underline">Projects</a>
+                <a data-aos="flip-down" href="#contact-me" class="bg-white text-black rounded-2xl px-4 py-2 -mt-2 cursor-pointer">Contact me</a>
             </div>
         </div>
         
         <!-- Toggle Right Side Bar -->
-        <div class="block 2xl:hidden">
+        <div class="block 2xl:hidden relative">
 
             <!-- Trigger button -->
-            <button @click="open = true" class="w-max cursor-pointer">
+            <button @click="open = true" class="w-max cursor-pointer fixed right-8 z-100">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
                 </svg>
@@ -37,10 +37,10 @@
                             </div>
 
                             <div class="w-full text-white flex flex-col gap-2 mt-4">
-                                <a href="#" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">About Me</a>
-                                <a href="#" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">Skills</a>
-                                <a href="#" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">Projects</a>
-                                <a href="#" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">Contact me</a>
+                                <a href="#about-me" @click="closeModal" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">About Me</a>
+                                <a href="#skills" @click="closeModal" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">Skills</a>
+                                <a href="#projects" @click="closeModal" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">Projects</a>
+                                <a href="#contact-me" @click="closeModal" class="text-center w-full cursor-pointer hover:bg-gray-500 p-2">Contact me</a>
                             </div>
                         </div>
                     </transition>
